@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 0.7em;
+        }
+        h1, h2, h3, h4{
+            font-family: 'Prata', serif;
+        }
+        a:link{
+            color: dimgray;
+        }
+        a:hover{
+            color: rgb(46, 46, 46);
+        }
+        #logo{
+            width: 280px;
+        }
+        #navigation{
+            text-transform: uppercase;
+        }
+        #navigation li{
+            padding:0px 40px;
+            text-align: center;
+            
+        }
+        #navigation li a:hover{
+            padding-bottom: 18px;
+            border-bottom:solid 2px red;
+            text-decoration: none;
+        }
+        #header-img{
+            background-image: url(https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:low,c_fill,g_auto,w_1952,h_976/at%2Fhouse%20tours%2F2020-08%2FMaya%2Fmaya_teaser);
+            background-size: cover;
+            padding:60px 20px;
+            overflow: auto;
+        }
+        #header-text{
+            background-color: rgba(0,0,0, 0.5);
+            width:300px;
+            padding:10px;
+            color:white;
+            float: right;
+        }
+        .input-gray{
+            background-color: lightgrey;
+            border:none;
+            width:240px;
+            padding:4px;
+            line-height: 20px;
+        }
+        .section-label{
+            color:red;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-bottom">
+        <div class="container" id="top-bar">
+            <div class="row py-2">
+                <div class="col">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewBox="0 0 764 100" aria-labelledby="at-logo-title at-logo-desc"><title id="at-logo-title">Apartment Therapy</title><desc id="at-logo-desc">The logomark and logotype for the Apartment Therapy brand.</desc><path d="M54.4 21.9v.4c-1.5 8.1-4.4 12.5-9.2 14.4-1.2.4-2.4.7-3.7.7-4.8-.5-8.9-3.6-10.7-8.1-1.1-2-2-4.2-3.1-6.6-2.9-5.9-7-13.3-11.4-13.3-1.4 0-2.8.3-4.2.9C9 12 9 13.6 9 14.2c-.6 5.3 3.9 10.3 10.3 16.2.7.7 1.5 1.3 2.4 2.2 4.1 3.4 7.6 7.4 10.5 11.8 1.7 2.5 2.7 5.5 2.8 8.5.1 3.4-.8 6.7-2.6 9.6-1.1 2-2.4 3.8-3.9 5.5-4.4 5-5.9 9.2-4.2 13.1 1 2 2.8 3.6 5 4.2.8.2 1.6.2 2.4.2 5.7 0 8.3-3.7 9.6-14.2.7-4.4 2.3-8.6 4.6-12.5 2.2-4.4 6.7-7.2 11.6-7.4h1.1c3.6 0 7 1.5 9.4 4.2 1.9 2.3 3.2 5 3.7 7.9.4 2.8.4 5.7 0 8.5 0 .9-.2 1.8-.4 2.6-.7 4.6-1.5 12 .7 14.7.8.8 1.9 1.2 3.1 1.1h.9c2 .1 4-.8 5.3-2.4 2.7-3.9 3.6-8.7 2.6-13.3-.2-1.1-.4-2.8-.7-4.6-1-4.5-1.5-9.1-1.5-13.8.2-6.6 2-10.7 6.1-13.3 1.4-.9 3-1.3 4.6-1.3 3.2-.1 6.3 1.3 8.3 3.7 1.5 1.7 2.7 3.6 3.7 5.7.9 2 1.3 3.9 2 5.7.9 3.3 2.5 6.5 4.6 9.2 1.2 1.3 2.8 2 4.6 2 1.5-.1 2.9-.8 3.9-2 2-2.4 3-5.4 2.6-8.5-.1-4.7-2.1-9.2-5.5-12.5-2.2-1.4-4.4-2.7-6.8-3.7-3.2-1.6-6.1-3.8-8.5-6.3-3.3-3.9-4.3-9.2-2.6-14 0-.2.2-.4.2-.7 1.5-4.8 1.7-7 .2-8.3-.6-.4-1.4-.7-2.2-.7-1.1.1-2.1.5-2.8 1.3-1 1.2-1.9 2.5-2.6 3.9-1.3 2.3-2.7 4.5-4.4 6.6-2.3 2.5-5.4 4.1-8.7 4.4h-.2c-4-.2-7.8-2.2-10.3-5.3-1.2-1.3-2.3-2.8-3.3-4.4-1-1.7-2.2-3.3-3.5-4.8-3.6-4.3-5.6 2.3-6.7 8.9m-9-1.5V20c.9-5.3 1.7-13.1 7.7-16.6 1.9-1 4-1.6 6.1-1.5 6.8 0 11.2 6.8 14 10.9 1.5 2.4 2.8 5.3 4.8 5.3 1.7 0 3.3-1.5 5.7-5.9 1.1-1.9 2.4-3.7 3.7-5.5 2.2-2.8 5.6-4.3 9.2-4.2 3.2 0 6.3 1.1 8.7 3.1 2.7 2.6 4 6.3 3.7 10.1-.1 2.6-.7 5.2-1.7 7.7 0 .2-.2.4-.2.7-.7 2-.4 4.1.7 5.9 2 1.8 4.2 3.4 6.6 4.6 2.7 1.2 5.2 2.6 7.7 4.2 5.3 4.8 8.5 11.5 9 18.6.7 5.5-1 10.9-4.6 15.1-2.7 3.1-6.6 5-10.7 5-4-.1-7.9-1.7-10.7-4.6-3.3-3.5-5.7-7.7-7-12.2-.5-1.7-1.2-3.3-2-4.8-1.1-2.2-1.7-4.2-3.3-4.2-1.5 0-1.7 3.5-1.7 5.5.2 4 .7 7.9 1.5 11.8.4 2 .7 3.7.9 5.3 1.5 15.8-5.9 26-16.8 26h-1.3c-3.9 0-7.5-1.7-10.1-4.6-4.8-5.9-3.5-15.3-2.4-22.1.2-.9.2-1.7.4-2.4.5-3-.1-6.1-1.7-8.7-.6-.6-1.4-.9-2.2-.9H59c-3.7.2-5 4.2-7.2 12.7-1 4.9-2.6 9.6-4.8 14-3.1 5.1-8.7 8.1-14.7 7.8-1.3 0-2.6-.2-3.9-.4-2.8-.7-5.4-2.1-7.7-3.9-2.1-1.6-3.8-3.8-4.8-6.3-1.9-4.4-1.9-9.4 0-13.8 1.3-2.9 3-5.6 5-8.1 1.3-1.7 2.6-3.4 3.7-5.3 1.7-2.6 1.8-6 .2-8.7-2.6-3.5-5.5-6.7-8.7-9.6-.9-.9-1.7-1.5-2.4-2.2C6.3 30.9-1.2 23.2.2 13.3.2 8.4 3.1 4 7.6 2c2.6-1.4 5.6-2 8.5-2C21.3 0 26.2 2.6 29 7c2.5 3.8 4.6 7.8 6.3 12 2.7 6.2 7.1 19.7 10.1 1.4" fill-rule="evenodd" clip-rule="evenodd" fill="#f12330"></path><path d="M724.669 33.895c-.6-1.1 0-2 1.3-2h4.6c.6-.1 1.2.3 1.5.9l12.7 27.7 12-27.7c.3-.6.8-.9 1.5-.9h4.1c1.3 0 2 .9 1.3 2l-22.1 46.9c-.3.6-.8 1-1.5 1.1h-3.3c-.8.1-1.6-.4-1.7-1.2 0-.3 0-.7.2-1l5.9-11.6-16.5-34.2zm-62.7 28.6c3.8.1 7.5-1.5 10-4.4v-6.7c-2.4-1.8-5.3-2.8-8.3-2.8-5 0-8.5 2.2-8.5 6.8 0 3.9 3 7 6.8 7.1m2.4-19c2.7.2 5.4 1 7.7 2.4 0-6.6-2.6-9.8-7.7-9.8-3.1-.1-6.1.6-8.9 2-.6.3-1.3.1-1.5-.5-.1-.1-.1-.3-.1-.4l-.7-2.2c-.3-.8 0-1.6.8-2 0 0 .1 0 .1-.1 3.3-1.7 7-2.5 10.7-2.4 9.2 0 13.5 4.6 13.5 15.3v20.2c0 .9-.7 1.7-1.7 1.7h-2.8c-.8 0-1.4-.5-1.5-1.3v-2.4c-3.1 2.8-7.1 4.2-11.2 4.1-6.7-.1-12-5.7-11.8-12.3v-.2c0-6.9 5.7-12.1 15.1-12.1m-54.8 2.8h-19.9c-.3 0-.5-.2-.6-.5.9-5.4 5.6-9.3 11.1-9.2 5.2.2 9.4 4.1 10 9.2 0 .1 0 .5-.6.5m-9.2-15.2c-9.8.1-17.6 8.1-17.6 17.9v1c-.7 9.6 6.5 18 16.1 18.8.5 0 .9.1 1.4 0 4.7 0 9.3-1.4 13.1-4.1 1.3-.9.9-1.5.4-2.4-.6-.7-.9-1.3-1.5-2-.7-.9-1.3-.6-2.6.2-2.7 1.7-5.7 2.6-8.9 2.6-6.1-.3-11.1-4.9-11.8-10.9 0-.3.1-.6.4-.7h25.2c.8 0 1.5-.6 1.7-1.5 0-.6.2-1.8.2-2.4.3-8.7-6.5-16.1-15.2-16.4-.4-.1-.6-.1-.9-.1m-64.6 29.9c-.4-.7-.7-1.3-2.2-.6-1.5 1.4-3.5 2.2-5.5 2.2-3.5 0-4.1-4.2-3.9-4.6v-19.5c0-.6.4-1.1 1-1.1H534.469c.9 0 1.7-.7 1.7-1.7v-2c0-.9-.7-1.7-1.7-1.7h-9c-1.1 0-1.3-.7-1.3-1.1v-9.4c0-.9-.7-1.7-1.7-1.7h-2.8c-1 0-1.8.7-1.8 1.7v9.5c0 .6-.5 1.2-1.1 1.3h-3.5c-.9 0-1.7.7-1.7 1.7v2c0 .9.7 1.7 1.7 1.7h3.5c.5.1.9.6.9 1.1v20.2c-.4 5 3.4 9.4 8.4 9.8.6 0 1.3 0 1.9-.1 2.9-.1 5.8-1.2 8.1-3 .9-.6 1.3-1.1.6-2.2l-.9-2.5zm25.7-29.9c-3.6-.1-7.2 1.3-9.8 3.9 0 0-.7.7-.7-.4v-17c0-.9-.7-1.7-1.7-1.7h-2.8c-.9 0-1.7.7-1.7 1.7v48.4c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-19.5c-.2-4.7 3.4-8.8 8.1-9.2.7-.2 1.3-.2 2-.2 5.1-.1 9.3 3.9 9.5 9v19.9c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-18.8c1-7.9-4.6-15-12.5-16-1-.1-1.9-.1-2.8-.1m141.3 31.4c-3.2-.1-6.3-1.2-8.9-3.1v-18.7c2.3-2.8 5.6-4.4 9.2-4.4 7.2 0 11.4 6.3 11.4 13.3.5 6.6-4.4 12.3-10.9 12.9h-.8m1.1-31.9c-3.6 0-7.1 1.2-10 3.3v-.4c0-.9-.7-1.7-1.7-1.7h-2.8c-.9 0-1.7.7-1.7 1.7v46.5c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-14.6c2.8 2 6.2 3 9.6 3 9.8-.2 17.6-8.4 17.4-18.2v-.6c.7-9.7-6.6-18.2-16.3-19h-.7m-63.9 0c-3.9-.1-7.6 1.4-10.3 4.1v-1.1c0-.9-.7-1.7-1.7-1.7h-2.8c-.9 0-1.7.7-1.7 1.7v32.3c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-24c2.2-3.2 5.9-5.1 9.8-5 1.2 0 2.4.3 3.5.7.9.4 1.7.4 2.2-.7l1.1-3.1c.9-2.7-3.5-3.2-6.3-3.2m-225.9 16h-19.9c-.3 0-.5-.2-.6-.5.9-5.4 5.6-9.3 11.1-9.2 5.2.2 9.4 4.1 10 9.2-.1.3-.3.5-.6.5m-9.4-15.3c-9.8.1-17.6 8.1-17.6 17.9v1c-.7 9.6 6.5 18 16.1 18.8.5 0 .9.1 1.4 0 4.7 0 9.3-1.4 13.1-4.1 1.3-.9.9-1.5.4-2.4-.6-.7-.9-1.3-1.5-2-.7-.9-1.3-.6-2.6.2-2.7 1.7-5.7 2.6-8.9 2.6-6.1-.3-11.1-4.9-11.8-10.9 0-.3.1-.6.4-.7h25.1c.8 0 1.5-.6 1.7-1.5 0-.6.2-1.8.2-2.4.4-8.7-6.3-16-15-16.4-.3-.1-.7-.1-1-.1m82.4 30.1c-.4-.7-.7-1.3-2.2-.6-1.5 1.4-3.5 2.2-5.5 2.2-3.5 0-4.1-4.2-3.9-4.6v-19.5c0-.6.4-1.1 1-1.1H485.769c.9 0 1.7-.7 1.7-1.7v-2c0-.9-.7-1.7-1.7-1.7h-9c-1.1 0-1.3-.7-1.3-1.1v-9.6c0-.9-.7-1.7-1.7-1.7h-2.8c-1 0-1.8.7-1.8 1.7v9.4c0 .6-.5 1.2-1.1 1.3h-3.5c-.9 0-1.7.7-1.7 1.7v2c0 .9.7 1.7 1.7 1.7h3.5c.5.1.9.6.9 1.1v20.3c-.4 5 3.4 9.4 8.4 9.8.6 0 1.3 0 1.9-.1 2.9-.1 5.8-1.2 8.1-3 .9-.6 1.3-1.1.6-2.2l-.9-2.3zm-43.1-30.1c-3.6 0-7.2 1.3-9.8 3.9 0 0-.7.7-.7-.4v-.9c0-.9-.7-1.7-1.7-1.7h-2.8c-.9 0-1.7.7-1.7 1.7v32.3c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-19.6c-.2-4.7 3.4-8.8 8.1-9.2.7-.2 1.3-.2 2-.2 5.1-.1 9.3 3.9 9.5 9v20c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-18.8c-.2-10.4-6.5-16.1-15.3-16.1m-282.3 31.6c3.8.1 7.5-1.5 10-4.4v-6.6c-2.4-1.8-5.3-2.8-8.3-2.8-5 0-8.5 2.2-8.5 6.8 0 3.7 3 6.8 6.8 7m2.4-19.2c2.7.2 5.4 1 7.7 2.4 0-6.6-2.6-9.8-7.7-9.8-3.1-.1-6.1.6-8.9 2-.6.3-1.3.1-1.5-.5-.1-.1-.1-.3-.1-.4l-.9-2.2c-.3-.8 0-1.6.8-2 0 0 .1 0 .1-.1 3.3-1.7 7-2.5 10.7-2.4 9.2 0 13.5 4.6 13.5 15.3v20.1c0 .9-.7 1.7-1.7 1.7h-2.4c-.8 0-1.4-.5-1.5-1.3v-2.4c-3.1 2.8-7.1 4.2-11.2 4.1-6.7-.2-11.9-5.7-11.8-12.4v-.2c-.2-6.7 5.7-11.9 14.9-11.9m73.8 19.2c3.8.1 7.5-1.5 10-4.4v-6.6c-2.4-1.9-5.3-2.9-8.3-2.9-5 0-8.5 2.2-8.5 6.8 0 3.9 3 7 6.8 7.1m2.4-19.2c2.7.2 5.4 1 7.7 2.4 0-6.6-2.6-9.8-7.7-9.8-3.1-.1-6.1.6-8.9 2-.6.3-1.3.1-1.5-.5-.1-.1-.1-.3-.1-.4l-.7-2.2c-.3-.8 0-1.6.8-2 0 0 .1 0 .1-.1 3.3-1.7 7-2.5 10.7-2.4 9.2 0 13.5 4.6 13.5 15.3v20.1c0 .9-.7 1.7-1.7 1.7h-2.4c-.8 0-1.4-.5-1.5-1.3v-2.4c-3.1 2.8-7.1 4.2-11.2 4.1-6.7-.1-12-5.7-11.8-12.3v-.2c-.4-6.8 5.3-12 14.7-12m74 17.7c-.4-.7-.7-1.3-2.2-.6-1.5 1.4-3.5 2.2-5.5 2.2-3.5 0-4.1-4.2-3.9-4.6v-19.5c0-.6.4-1.1 1-1.1H312.969c.9 0 1.7-.7 1.7-1.7v-2c0-.9-.7-1.7-1.7-1.7h-9c-1.1 0-1.3-.7-1.3-1.1v-9.6c0-.9-.7-1.7-1.7-1.7h-2.8c-1 0-1.8.7-1.8 1.7v9.4c0 .6-.5 1.2-1.1 1.3h-3.3c-.9 0-1.7.7-1.7 1.7v2c0 .9.7 1.7 1.7 1.7h3.5c.5.1.9.6.9 1.1v20.3c-.4 5 3.4 9.4 8.4 9.8.6 0 1.3 0 1.9-.1 2.9-.1 5.8-1.2 8.1-3 .9-.6 1.3-1.1.6-2.2l-1.1-2.3zm-112.5 1.5c-3.2-.1-6.3-1.2-8.9-3.1v-18.7c2.3-2.8 5.6-4.4 9.2-4.4 7.2 0 11.4 6.3 11.4 13.3.5 6.6-4.4 12.3-10.9 12.9h-.8m1.1-31.9c-3.6 0-7.1 1.2-10 3.3v-.4c0-.9-.7-1.7-1.7-1.7h-2.8c-.9 0-1.7.7-1.7 1.7v46.5c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-14.6c2.8 2 6.2 3 9.6 3 9.8-.2 17.6-8.4 17.4-18.2v-.6c.7-9.7-6.6-18.2-16.3-19h-.7m76.3 0c-3.9-.1-7.6 1.4-10.3 4.1v-1.1c0-.9-.7-1.7-1.7-1.7h-2.8c-.9 0-1.7.7-1.7 1.7v32.3c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-24.2c2.2-3.2 5.9-5.1 9.8-5 1.2 0 2.4.3 3.5.7.9.4 1.7.4 2.2-.7l1.1-3.1c.9-2.7-3.5-3-6.3-3m86.6.3c-5.2-.1-10.1 2.7-12.7 7.2-2.6-4.7-7.7-7.5-13.1-7.2-3.6-.1-7.2 1.3-9.8 3.9 0 0-.7.7-.7-.4v-.9c0-.9-.7-1.7-1.7-1.7h-2.8c-.9 0-1.7.7-1.7 1.7v32.3c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-19.6c-.2-4.7 3.4-8.8 8.1-9.2.7-.2 1.3-.2 2-.2 5.1-.1 9.3 3.9 9.5 9v20c0 .9.7 1.7 1.7 1.7h3c.9 0 1.7-.7 1.7-1.7v-19.6c-.2-4.7 3.4-8.8 8.1-9.2.7-.2 1.3-.2 2-.2 5.1-.1 9.3 3.9 9.5 9v20c0 .9.7 1.7 1.7 1.7h2.8c.9 0 1.7-.7 1.7-1.7v-18.8c-.4-10.4-6.7-16.1-15.5-16.1" fill-rule="evenodd" clip-rule="evenodd" fill="#000000"></path></svg>
+                </div>
+                <div class="col text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item ml-4"><a href="#">NEWSLETTER</a></li>
+                        <li class="list-inline-item  ml-4">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                                <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                              </svg>
+                        </li>
+                        <li class="list-inline-item  ml-4">
+                            <form>
+                                <input type="text" name="" id="" class="input-gray">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom mt-3">
+        <div class="container" id="navigation">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item"><a href="#">House Tours</a></li>
+                <li class="list-inline-item"><a href="#">Style</a></li>
+                <li class="list-inline-item"><a href="#">How To</a></li>
+                <li class="list-inline-item"><a href="#">Organize & Clean</a></li>
+                <li class="list-inline-item"><a href="#">Living</a></li>
+                <li class="list-inline-item"><a href="#">Shop</a></li>
+                <li class="list-inline-item"><a href="#">More</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-center mt-4">
+            <h1>House Tours</h1>
+            <p>Get inspired by these stylish homes, from innovative tiny homes to chic apartments and more.</p>
+        </div>
+        <div id="header-img" class="mb-4">
+            <div id="header-text">
+                <h1>Before & After: This Family’s 642-Square-Foot Cozy Cabin Got a Budget Renovation</h1>
+            </div>
+        </div>
+        <div id="sections">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card border-0">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:low,c_fill,g_auto,w_226,h_151/at%2Fhouse%20tours%2F2020-01%2FIsabelle%20W%2FDLP-AT-4150" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="section-label">Real Estate</p>
+                            <h4>8 Questions to Ask Yourself Before Buying a House for the First Time</h4>
+                            <p>By Terri Williams</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:low,c_fill,g_auto,w_226,h_151/at%2Fhouse%20tours%2F2020-01%2FIsabelle%20W%2FDLP-AT-4150" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="section-label">Real Estate</p>
+                            <h4>8 Questions to Ask Yourself Before Buying a House for the First Time</h4>
+                            <p>By Terri Williams</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:low,c_fill,g_auto,w_226,h_151/at%2Fhouse%20tours%2F2020-01%2FIsabelle%20W%2FDLP-AT-4150" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="section-label">Real Estate</p>
+                            <h4>8 Questions to Ask Yourself Before Buying a House for the First Time</h4>
+                            <p>By Terri Williams</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:low,c_fill,g_auto,w_226,h_151/at%2Fhouse%20tours%2F2020-01%2FIsabelle%20W%2FDLP-AT-4150" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="section-label">Real Estate</p>
+                            <h4>8 Questions to Ask Yourself Before Buying a House for the First Time</h4>
+                            <p>By Terri Williams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of id section -->
+        <div id="latest">
+            <h5>THE LATEST</h5>
+            <div class="row mb-4">
+                <div class="col-sm-6 border-top py-4">
+                    <p class="section-label">Home Projects</p>
+                    <h2>Before and After: A Boho-Style Breakfast Nook Packed with DIY Money-Saving Hacks</h2>
+                    <p>When you’re living in a small space, it’s crucial to maximize every square inch.</p>
+                    <p>By Terri Williams</p>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:low,c_fill,g_auto,w_732,h_366/at%2Fhouse%20tours%20stock%20archive%2F1af49181844459e60873ecb505f0cd8aa22cc0ef" alt="">
+                </div>
+            </div> <!-- end of first latest row -->
+        </div>
+        <div class="row">
+            <div class="col-sm-6 border-top py-4">
+                <p class="section-label">Home Projects</p>
+                <h2>Before and After: A Boho-Style Breakfast Nook Packed with DIY Money-Saving Hacks</h2>
+                <p>When you’re living in a small space, it’s crucial to maximize every square inch.</p>
+                <p>By Terri Williams</p>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-fluid" src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:low,c_fill,g_auto,w_732,h_366/at%2Fhouse%20tours%20stock%20archive%2F1af49181844459e60873ecb505f0cd8aa22cc0ef" alt="">
+            </div>
+        </div> <!-- end of second latest row -->
+    </div>
+    </div>
+</body>
+</html>
